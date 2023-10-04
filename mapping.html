@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #image-container {
+      position: relative;
+      
+    }
+
+    #responsive-image {
+      width: auto;
+      height: auto;
+    }
+
+    /* Define your map areas with percentage-based coordinates */
+    area {
+      display: block;
+      position: absolute;
+      border: 2px solid #000; /* Just for visualization, you can remove this */
+    }
+
+    /* Media query for adjusting coordinates on smaller screens */
+    @media (max-width: 600px) {
+      area {
+        /* Adjust coordinates for smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div id="image-container">
+    <img id="responsive-image" src="https://images.pexels.com/photos/265004/pexels-photo-265004.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600" usemap="#image-map">
+
+    <map name="image-map">
+        <area target="_blank" alt="Computer" title="Computer" href="https://en.wikipedia.org/wiki/Computer" coords="450,203,596,333" shape="rect">
+        <area target="_blank" alt="Pot" title="Pot" href="https://www.flipkart.com/home-improvement/lawn-and-gardening/plants-and-planters/plant-containers/pr?sid=h1m,um7,sd1,oyg&amp;otracker=categorytree" coords="331,332,39" shape="circle">
+        <area target="_blank" alt="Chair" title="Chair" href="https://www.pepperfry.com/category/chairs.html" coords="74,279,78,299,78,321,81,372,103,373,135,369,142,304,139,269,108,268" shape="poly">
+        <area target="_blank" alt="Books Table" title="Books Table" href="https://www.amazon.in/Book-Table/s?k=Book+Table" coords="159,251,284,351" shape="rect">
+    </map>
+</div>
+
+</body>
+</html>
